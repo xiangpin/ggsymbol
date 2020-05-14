@@ -1,0 +1,26 @@
+Package: ggsymbol
+Title: Symbol Layer based on `ggplot2` and `ggstar` 
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Shuangbin",
+           family = "Xu",
+           role = c("aut", "cre"),
+           email = "xshuangbin@163.com",
+           comment = c(ORCID = "0000-0003-3513-5362"))
+Description: The points layer was provided, combined the shapes of `geom_point` in `ggplot2` 
+    and some `starshapes` of `geom_star` in `ggstar`.
+Imports:
+  ggplot2,
+  grid,
+  scales,
+  utils
+Suggests:
+  ggstar (>= 0.0.6),
+  knitr
+License: GPL (>=3)
+Encoding: UTF-8
+LazyData: FALSE
+URL: https://github.com/xiangpin/ggsymbol/
+BugReports: https://github.com/xiangpin/ggsymbol/issues
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0

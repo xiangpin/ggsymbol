@@ -1,0 +1,39 @@
+---
+title: "symbols layer for ggplot2"
+author: |
+  | Shuangbin Xu
+  | School of Basic Medical Sciences, Southern Medical University
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    toc: true
+    theme: cayman
+    highlight: vignette
+  pdf_document:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{ ggsymbol: basics using.}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\usepackage[utf8]{inputenc}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo=FALSE, results="asis", message=FALSE, KnitrSetUp}
+knitr::opts_chunk$set(tidy=FALSE,warning=FALSE,message=FALSE)
+Biocpkg <- function (pkg){
+    sprintf("[%s](http://bioconductor.org/packages/%s)", pkg, pkg)
+}
+
+CRANpkg <- function(pkg){
+    cran <- "https://CRAN.R-project.org/package"
+    fmt <- "[%s](%s=%s)"
+    sprintf(fmt, pkg, cran, pkg)
+}
+```
+
+```{r, echo=FALSE, results="hide", message=FALSE, Loadpackages}
+library(ggplot2)
+library(ggsymbol)
+```
+
+
