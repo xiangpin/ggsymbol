@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "xshuangbin@163.com",
            comment = c(ORCID = "0000-0003-3513-5362"))
-Description: The points layer was provided, combined the shapes of `geom_point` in `ggplot2` 
+Description: The points layer was provided, integrated the shapes of `geom_point` in `ggplot2`
     and some `starshapes` of `geom_star` in `ggstar`.
 Imports:
   ggplot2,

@@ -25,6 +25,10 @@ library(badger)
 cat(packageDescription('ggsymbol')$Description)
 ```
 
+![](./inst/extdata/symbols.png) 
+
+The shapes of `0-25` and `33-127` are from `pointsGrob` of `grid`, the `26-32` are from `starGrob` of [`ggstar`](https://github.com/xiangpin/ggstar)
+
 # :writing_hand: Author
 
 [Shuangbin Xu](https://github.com/xiangpin)

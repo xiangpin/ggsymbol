@@ -14,8 +14,14 @@
 
 <!-- [![](https://cranlogs.r-pkg.org/badges/last-week/ggsymbol?color=green)](https://cranlogs.r-pkg.org/downloads/total/last-week/ggsymbol) -->
 
-The points layer was provided, combined the shapes of `geom_point` in
+The points layer was provided, integrated the shapes of `geom_point` in
 `ggplot2` and some `starshapes` of `geom_star` in `ggstar`.
+
+![](./inst/extdata/symbols.png)
+
+The shapes of `0-25` and `33-127` are from `pointsGrob` of `grid`, the
+`26-32` are from `starGrob` of
+[`ggstar`](https://github.com/xiangpin/ggstar)
 
 # :writing\_hand: Author
 
