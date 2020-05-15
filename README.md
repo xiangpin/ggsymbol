@@ -14,8 +14,8 @@
 
 <!-- [![](https://cranlogs.r-pkg.org/badges/last-week/ggsymbol?color=green)](https://cranlogs.r-pkg.org/downloads/total/last-week/ggsymbol) -->
 
-The points layer was provided, integrated the shapes of `geom_point` in
-`ggplot2` and some `starshapes` of `geom_star` in `ggstar`.
+The points layer was provided, integrated the shapes of “geom\_point” in
+“ggplot2” and some “starshapes” of “geom\_star” in “ggstar”.
 
 ![](./inst/extdata/symbols.png)
 
