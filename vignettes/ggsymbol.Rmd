@@ -36,4 +36,59 @@ library(ggplot2)
 library(ggsymbol)
 ```
 
+# 1. Introduction
+
+The point shapes of [`ggplot2`](https://ggplot2.tidyverse.org/) based on `grid` provide several symbols. And the shapes are stored internally as integers. You can see the `pch` of `points`. Recently. I developed [`ggstar`](https://github.com/xiangpin/ggstar) to create some regular polygons (Non-deformable). It is built with the merits of [`ggplot2`](https://ggplot2.tidyverse.org/) that was based on the grammar of graphics. It can use `starshape` parameter to control the selection of shapes. However, It can not be mapped with `geom_point`. To fill the gap. The [`ggsymbol`](https://github.com/xiangpin/ggsymbol) was born. It provides points layer by integrated the shapes of `geom_point` of [`ggplot2`](https://ggplot2.tidyverse.org/) and some `starshapes` of [`ggstar`](https://github.com/xiangpin/ggstar)
+
+# 2. Total shapes
+
+The total shapes:
+
+```{r, fig.align="center", fig.width=7, fig.height=5.5, showshapes}
+library(ggplot2)
+library(ggsymbol)
+d <- data.frame(p=c(0:127),f=c(rep("g",26), rep("s", 7), rep("g", 95)))
+d$f <- factor(d$f, levels=c("g", "s"))
+p <- ggplot() + 
+     geom_symbol(data=d, 
+                 mapping=aes(x=p%%16, y=p%/%16, symbol=p, fill=f), 
+                 size=4, stroke=0.5, show.legend=FALSE) +
+     geom_text(data=d, 
+               mapping=aes(x=p%%16, y=p%/%16+0.25, label=p), 
+               size=3) +
+     scale_symbol_identity() +
+     scale_fill_manual(values=c("red", "blue")) +
+     xlab(NULL) +
+     ylab(NULL) +
+     theme(axis.ticks=element_blank(),
+           axis.text=element_blank())
+p
+```
+
+The shapes of `0-25` and `33-127` are from `pointsGrob` of `grid`, the `26-32` are from `starGrob` of [`ggstar`](https://github.com/xiangpin/ggstar)
+
+# 3. Demo
+
+```{r, fig.align="center", fig.width=7, fig.height=5.2, Demo}
+p <- ggplot(data=iris, aes(x=Sepal.Width,y=Sepal.Length)) +
+     geom_symbol(aes(symbol=Species, fill=Species), 
+                 color="grey60", size=2.5,
+                 stroke=0.5) +
+     scale_fill_manual(values=c("#E41A1C", "#377EB8", "#4DAF4A")) +
+     scale_symbol_manual(values=c(28, 22, 21))
+
+p
+```
+
+# 4. Need helps?
+
+If you have questions/issues, please visit [github issue tracker](https://github.com/xiangpin/ggsymbol/issues).
+
+# 5. Session information
+
+Here is the output of sessionInfo() on the system on which this document was compiled:
+
+```{r, echo=FALSE}
+sessionInfo()
+```
 
