@@ -38,7 +38,7 @@ library(ggsymbol)
 
 # 1. Introduction
 
-The point shapes of [`ggplot2`](https://ggplot2.tidyverse.org/) based on `grid` provide several symbols. And the shapes are stored internally as integers. You can see the `pch` of `points`. Recently. I developed [`ggstar`](https://github.com/xiangpin/ggstar) to create some regular polygons (Non-deformable). It is built with the merits of [`ggplot2`](https://ggplot2.tidyverse.org/) that was based on the grammar of graphics. It can use `starshape` parameter to control the selection of shapes. However, It can not be mapped with `geom_point`. To fill the gap. The [`ggsymbol`](https://github.com/xiangpin/ggsymbol) was born. It provides points layer by integrated the shapes of `geom_point` of [`ggplot2`](https://ggplot2.tidyverse.org/) and some `starshapes` of [`ggstar`](https://github.com/xiangpin/ggstar)
+The point shapes of [`ggplot2`](https://ggplot2.tidyverse.org/) based on `grid` provide several symbols. And the shapes are stored internally as integers. You can see the `pch` of `points`. Recently. I developed [`ggstar`](https://github.com/xiangpin/ggstar) to create some regular polygons (Non-deformable). It is built with the merits of [`ggplot2`](https://ggplot2.tidyverse.org/) that was based on the grammar of graphics. It can use `starshape` parameter to control the selection of shapes. However, It can not be mapped with `geom_point`. To fill the gap. The [`ggsymbol`](https://github.com/xiangpin/ggsymbol) was born. It provides points layer by integrating the shapes of `geom_point` of [`ggplot2`](https://ggplot2.tidyverse.org/) and some `starshapes` of [`ggstar`](https://github.com/xiangpin/ggstar)
 
 # 2. Total shapes
 
