@@ -14,8 +14,10 @@
 
 <!-- [![](https://cranlogs.r-pkg.org/badges/last-week/ggsymbol?color=green)](https://cranlogs.r-pkg.org/downloads/total/last-week/ggsymbol) -->
 
-The points layer was provided, integrated the shapes of “geom\_point” in
-“ggplot2” and some “starshapes” of “geom\_star” in “ggstar”.
+To create symbol layer, I developed this package. It integrated the
+shapes of “R base” and some regular polygon shapes of “ggstar”. It was
+built with the merits of “ggplot2” that was based on the grammer of
+graphics. So it can be easily used.
 
 ![](./inst/extdata/symbols.png)
 

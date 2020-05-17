@@ -1,5 +1,5 @@
 Package: ggsymbol
-Title: Symbol Layer Based on "ggplot2" and "ggstar" 
+Title: Symbol Layer Based on 'ggplot2' and 'ggstar'
 Version: 0.0.1.0
 Authors@R: 
     person(given = "Shuangbin",
@@ -7,8 +7,9 @@ Authors@R:
            role = c("aut", "cre"),
            email = "xshuangbin@163.com",
            comment = c(ORCID = "0000-0003-3513-5362"))
-Description: The points layer was provided, integrated the shapes of "geom_point" in "ggplot2"
-    and some "starshapes" of "geom_star" in "ggstar".
+Description: To create symbol layer, I developed this package. It integrated the shapes of 'R base'
+    and some regular polygon shapes of 'ggstar'. It was built with the merits of 'ggplot2' that was
+    based on the grammar of graphics. So it can be easily used.
 Depends:
   R (>= 3.5)
 Imports:
