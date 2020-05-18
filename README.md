@@ -4,19 +4,19 @@
 
 <!-- <img src="https://github.com/xiangpin/ggsymbol/blob/master/inst/extdata/ggsymbol.png" height="200" align="right" /> -->
 
-<!-- [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/ggsymbol?color=green)](https://cran.r-project.org/package=ggsymbol) -->
+<!-- [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/ggsymbol?color=blue)](https://cran.r-project.org/package=ggsymbol) -->
 
-<!-- r badge_devel("xiangpin/ggsymbol", "green") -->
+<!-- r badge_devel("xiangpin/ggsymbol", "blue") -->
 
-<!-- [![](https://cranlogs.r-pkg.org/badges/grand-total/ggsymbol?color=green)](https://cran.r-project.org/package=ggsymbol) -->
+<!-- [![](https://cranlogs.r-pkg.org/badges/grand-total/ggsymbol?color=blue)](https://cran.r-project.org/package=ggsymbol) -->
 
-<!-- [![](https://cranlogs.r-pkg.org/badges/ggsymbol?color=green)](https://cranlogs.r-pkg.org/downloads/total/last-month/ggsymbol) -->
+<!-- [![](https://cranlogs.r-pkg.org/badges/ggsymbol?color=blue)](https://cranlogs.r-pkg.org/downloads/total/last-month/ggsymbol) -->
 
-<!-- [![](https://cranlogs.r-pkg.org/badges/last-week/ggsymbol?color=green)](https://cranlogs.r-pkg.org/downloads/total/last-week/ggsymbol) -->
+<!-- [![](https://cranlogs.r-pkg.org/badges/last-week/ggsymbol?color=blue)](https://cranlogs.r-pkg.org/downloads/total/last-week/ggsymbol) -->
 
 To create symbol layer, I developed this package. It integrated the
-shapes of “R base” and some regular polygon shapes of “ggstar”. It was
-built with the merits of “ggplot2” that was based on the grammer of
+shapes of ‘R base’ and some regular polygon shapes of ‘ggstar’. It was
+built with the merits of ‘ggplot2’ that was based on the grammar of
 graphics. So it can be easily used.
 
 ![](./inst/extdata/symbols.png)

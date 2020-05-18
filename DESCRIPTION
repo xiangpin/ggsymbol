@@ -1,6 +1,6 @@
 Package: ggsymbol
 Title: Symbol Layer Based on 'ggplot2' and 'ggstar'
-Version: 0.0.1.0
+Version: 0.0.2.0
 Authors@R: 
     person(given = "Shuangbin",
            family = "Xu",
@@ -16,9 +16,10 @@ Imports:
   ggplot2,
   grid,
   scales,
-  utils
+  utils,
+  ggstar (>= 0.0.6)
 Suggests:
-  ggstar (>= 0.0.6),
+  prettydoc,
   knitr
 License: GPL (>=3)
 Encoding: UTF-8
