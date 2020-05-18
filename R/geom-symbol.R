@@ -165,3 +165,6 @@ translate_symbol_string <- function(shape_string) {
 
   unname(shape_table[shape_match])
 }
+
+#' @importFrom ggstar GeomStar
+ggstar::GeomStar
