@@ -11,6 +11,6 @@ These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
-  \item{ggstar}{\code{\link[ggstar]{GeomStar}}}
+  \item{ggstar}{\code{\link[ggstar:ggstar-ggproto]{GeomStar}}}
 }}
 
