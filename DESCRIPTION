@@ -27,4 +27,4 @@ LazyData: FALSE
 URL: https://github.com/xiangpin/ggsymbol/
 BugReports: https://github.com/xiangpin/ggsymbol/issues
 VignetteBuilder: knitr
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
