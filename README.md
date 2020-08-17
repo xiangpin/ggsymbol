@@ -23,7 +23,12 @@ graphics. So it can be easily used.
 
 The shapes of `0-25` and `33-127` are from `pointsGrob` of `grid`, the
 `26-32` are from `starGrob` of
-[`ggstar`](https://github.com/xiangpin/ggstar)
+[`ggstar`](https://github.com/xiangpin/ggstar).
+
+> This package will be deprecated, because it is too slow, especially
+> for big datasets. Some shapes of `pointsGrob` also has been developed
+> by [`ggstar`](https://github.com/xiangpin/ggstar), it is faster than
+> `ggsymbol`, so it will be developed and maintained in the future.
 
 # :writing\_hand: Author
 
@@ -33,7 +38,7 @@ School of Basic Medical Sciences, Southern Medical University
 
 # :arrow\_double\_down: Installation
 
-<!-- Get the released version from `CRAN`: -->
+<!-- Get the released version from [CRAN](https://mirrors.aliyun.com/CRAN/web/packages/ggsymbol/index.html): -->
 
 <!-- install.packages("ggsymbol") -->
 
@@ -63,7 +68,7 @@ p3
 
 <!-- # :book: Vignette -->
 
-<!-- For more details, please refer to the [online vignette](https://cran.r-project.org/web/packages/ggsymbol/vignettes/ggsymbol.html) -->
+<!-- For more details, please refer to the [online vignette](https://mirrors.aliyun.com/CRAN/web/packages/ggsymbol/vignettes/ggsymbol.html) -->
 
 <!-- If you have installed it, you can also view the vignette on local. -->
 
@@ -72,5 +77,5 @@ p3
 # :sparkling\_heart: Contributing
 
 We welcome any contributions\! By participating in this project you
-agree to bide by the terms outlined in the [Contributor Code of
+agree to abide by the terms outlined in the [Contributor Code of
 Conduct](CONDUCT.md).
