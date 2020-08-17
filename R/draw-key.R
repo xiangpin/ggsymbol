@@ -12,16 +12,21 @@
 #' @name draw_key
 #' @export
 #' @importFrom scales alpha
+#' @importFrom ggplot2 zeroGrob
 draw_key_symbol <- function(data, params, size){
     if (is.null(data$symbol)) {
         data$symbol <- 26 
     } else if (! is.numeric(data$symbol)) {
         data$symbol <- translate_symbol_string(data$symbol)
     }
-    symbolGrob(x=0.5, y=0.5,
-               symbol=data$symbol,
-               gp=gpar(fill=alpha(data$fill, data$alpha),
-                       col=alpha(data$colour, data$alpha),
-                       fontsize = (data$size %||% 1.5) * .pt + (data$stroke %||% 0.5) * .stroke / 2,
-                       lwd = (data$stroke %||% 0.5) * .stroke / 2))
+    if (is.na(data$symbol)){
+        zeroGrob()
+    }else{
+        symbolGrob(x=0.5, y=0.5,
+                   symbol=data$symbol,
+                   gp=gpar(fill=alpha(data$fill, data$alpha),
+                           col=alpha(data$colour, data$alpha),
+                           fontsize = (data$size %||% 1.5) * .pt + (data$stroke %||% 0.5) * .stroke / 2,
+                           lwd = (data$stroke %||% 0.5) * .stroke / 2))
+    }
 }
